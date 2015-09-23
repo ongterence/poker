@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>Poker Analyzer</title>
+    
+    
+    
+    
+    
+    
+    
+    
+  </head>
+
+<title>Poker Analyzer</title>
+</head>
+<body>
+
+<h1 class="header">Poker Hand Analyzer</h1>
+
+    <div id="container">
+            <p>Input cards in the format "XyXyXyXyXy" - where X equals a number or A, K, Q, J, T (T = 10), and s, h, d, c for suits (spades, hearts, diamonds, clubs). Omit all spaces. AcKhThTc4s is a valid hand of Ace of clubs, King of Hearts, 10 of hearts, 10 of clubs, and 4 of spades.</p>
+        <HR>
+        <P>Evaluate Hand</p>
+            <form>
+                <input type="text" id="formManualInput1" name="manualInput"/>
+                <input type="button" id="manualButton1" value="Evaluate Hand" onClick="input1(document.getElementById('formManualInput1').value)"/> 
+                <p id="manualRankingName1"></p>
+            </form>
+            <HR>
+        <p>Compare Two Hands<p>
+            <form>
+                <p>Player 1:<input type="text" id="input1" name="input1"/></p>
+                <p>Player 2:<input type="text" id="input2" name="input2"/><BR/></p>
+                <input type="button" id="compare" value= "Compare Hands" onClick="compareHands(document.getElementById('input1').value, document.getElementById('input2').value)">
+                <P id="input1Rank"></P>
+                <p id="input2Rank"></P>
+                <p id="winner"></p>
+            </form>
+<HR>
+
+
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+    <script src="js/index.js"></script>
+    
+    
+  </body>
+</html>
